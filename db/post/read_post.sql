@@ -1,3 +1,3 @@
-select title, content, img, profile_pic as author_pic, username as author from helo_posts p 
-join helo_users u on u.id = p.author_id
-where p.id = $1;
+SELECT title, content, img, profile_pic AS author_pic, username AS author FROM helo_posts p 
+JOIN helo_users u ON u.id = p.author_id
+WHERE p.id = $1;
